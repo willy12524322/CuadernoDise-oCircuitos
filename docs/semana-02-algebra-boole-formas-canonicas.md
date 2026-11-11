@@ -26,8 +26,6 @@ flowchart LR
 
 ## 1. Un circuito y una expresión son lo mismo
 
-Empezamos recordando la APE 01 con este circuito:
-
 ![¿Qué hace este circuito?](../assets/semana-02/01-que-hace-este-circuito.png)
 
 Tiene una AND (entradas A y B), una NOT (entrada C) y una OR que junta ambas. Escrito como expresión:
@@ -46,8 +44,6 @@ Tiene una AND (entradas A y B), una NOT (entrada C) y una OR que junta ambas. Es
 
 ![Un circuito y una expresión son lo mismo](../assets/semana-02/02-circuito-y-expresion.png)
 
-**Preguntas de calentamiento** (con la tabla de la [Semana 1](semana-01-sistemas-numericos-compuertas.md)):
-
 - Si A = 1, B = 0, C = 0 → `Y = 0 + 1 = ` **1**
 - Si A = 1, B = 1, C = 1 → `Y = 1 + 0 = ` **1**
 - En palabras: *«Y vale 1 si A y B están ambas en 1, o si C está en 0»*.
@@ -56,7 +52,7 @@ Tiene una AND (entradas A y B), una NOT (entrada C) y una OR que junta ambas. Es
 
 ## 2. Del enunciado a la especificación
 
-Un mismo enunciado se puede leer de dos maneras, y hay que decidir **cuál pide el cliente**.
+Un mismo enunciado se puede leer de dos maneras, y hay que decidir cuál pide el cliente.
 
 > «La sirena suena cuando se activan dos sensores.»
 
@@ -64,7 +60,7 @@ Un mismo enunciado se puede leer de dos maneras, y hay que decidir **cuál pide 
 |---|---|---|
 | Filas | 011, 101, 110 | 011, 101, 110, **111** |
 | Función | `F = Σm(3, 5, 6)` | `F = Σm(3, 5, 6, 7)` |
-| Con los tres activos | ¡No suena! | Suena |
+| Con los tres activos | No suena! | Suena |
 | ¿Cuál se usa? | | ✅ **Es la que pide el cliente** |
 
 La lección: antes de dibujar compuertas, hay que interpretar bien el enunciado.
@@ -82,25 +78,10 @@ Trabajamos con el conjunto `{0, 1}` y tres operaciones: `+` (OR), `·` (AND) y `
 | Conmutativa | `X + Y = Y + X` | `XY = YX` |
 | Distributiva | `X(Y + Z) = XY + XZ` | `X + YZ = (X + Y)(X + Z)` |
 
-> 🔁 **Dualidad:** si intercambias `+` ↔ `·` y `0` ↔ `1` (sin complementar variables), la identidad sigue siendo válida.
-
-La distributiva de la derecha es la que más sorprende, porque en el álgebra de siempre no existe. Aquí la demostración:
-
-```text
-A + BC = (A + B)(A + C)
-
-(A + B)(A + C)
-= AA + AC + AB + BC        distributiva
-= A + AC + AB + BC         idempotencia: AA = A
-= A(1 + C + B) + BC        factor común A
-= A + BC                   elemento nulo: 1 + … = 1
-```
-
 ---
 
 ## 4. Teoremas: tabla de consulta
 
-Según el docente, esta tabla se publica en el EVA: **no se memoriza, se consulta y se aplica.**
 
 | Teorema | Forma OR | Forma AND |
 |---|:---:|:---:|
@@ -116,7 +97,6 @@ Según el docente, esta tabla se publica en el EVA: **no se memoriza, se consult
 
 ## 5. Leyes de De Morgan
 
-> **«Rompe la barra, cambia el operador.»**
 
 ```text
 (A·B)' = A' + B'          (A + B)' = A'·B'
@@ -128,7 +108,6 @@ En circuitos: una NAND equivale a una OR con las entradas negadas, y una NOR equ
 
 ![Leyes de De Morgan](../assets/semana-02/03-de-morgan.png)
 
-### ✍️ En parejas: apliquen De Morgan (resuelto)
 
 | # | Expresión | Resultado |
 |:-:|---|---|
@@ -200,17 +179,6 @@ F = ΠM(0, 1, 2, 4) = (A+B+C)(A+B+C')(A+B'+C)(A'+B+C)
 
 > Entre ambas listas están todas las filas (0 a 7): **los índices de ΠM son los que faltan en Σm**.
 
-### ¿SOP o POS? Criterio de elección
-
-| Situación | Conviene |
-|---|---|
-| Pocos **1** en la tabla | **SOP** (menos términos) |
-| Pocos **0** en la tabla | **POS** (menos términos) |
-| Solo hay compuertas **NAND** | **SOP** → NAND-NAND (7400) |
-| Solo hay compuertas **NOR** | **POS** → NOR-NOR (7402) |
-
-El criterio final es siempre el **costo**: compuertas, circuitos integrados y niveles lógicos.
-
 ---
 
 ## 8. Resolución guiada: alarma de 3 sensores
@@ -235,12 +203,6 @@ F = AB + AC + BC
 
 La versión POS simplificada sale como `F = (A + B)(A + C)(B + C)`.
 
-### ¿Cuánto cuesta cada versión?
-
-| Versión | Circuitos integrados | Cantidad |
-|---|---|:---:|
-| **Canónica** | 7404 + 2×7411 + 7432 | **4 CI** |
-| **Simplificada** | 7408 + 7432 | **2 CI** |
 
 ![Costo de cada versión de la alarma](../assets/semana-02/04-costo-alarma.png)
 
@@ -256,7 +218,7 @@ La versión POS simplificada sale como `F = (A + B)(A + C)(B + C)`.
 | 4 | Absorción del complemento | `X + X'Y = X + Y` |
 | 5 | Consenso | `XY + X'Z + YZ = XY + X'Z` |
 
-> ⚠️ **No existe un algoritmo que garantice el mínimo.** Por eso la semana siguiente aparecen los mapas de Karnaugh.
+> ⚠️ **No existe un algoritmo que garantice el mínimo.** En la semana siguiente aparecen los mapas de Karnaugh para los minimos.
 
 ### Ejemplo: `F = A + A'B + AB'C`
 
@@ -271,8 +233,7 @@ Pasamos de **3 términos (5 literales)** a una sola OR de 2 entradas. Comprobaci
 
 ---
 
-## 10. Taller dirigido por grupos
-
+## 10. Ejercicios
 | Grupos | Problema | Enunciado |
 |:-:|---|---|
 | **G1 · G5** | Luz de pasillo | Dos interruptores A y B conmutan la luz; el interruptor maestro M (= 1) la apaga siempre |
@@ -291,8 +252,6 @@ Pasamos de **3 términos (5 literales)** a una sola OR de 2 entradas. Comprobaci
 | Bomba de agua (orden A, B, C) | `Σm(3, 6, 7)` | `ΠM(0, 1, 2, 4, 5)` | `F = B·(A + C) = AB + BC` |
 | Aviso de cinturón (orden E, C, P) | `Σm(5, 6, 7)` | `ΠM(0, 1, 2, 3, 4)` | `F = E·(C + P) = EC + EP` |
 
-> Para la **luz de pasillo** asumí que la luz está encendida cuando A y B son distintos y el maestro está en 0. Si tu grupo interpreta el enunciado distinto, cambia la tabla.
-
 ---
 
 ## 📝 Resumen de la semana
@@ -303,17 +262,6 @@ Pasamos de **3 términos (5 literales)** a una sola OR de 2 entradas. Comprobaci
 | ✅ **La tabla manda** | Dos expresiones son equivalentes si y solo si tienen la misma tabla de verdad |
 | ✅ **Canónica: siempre se puede** | `Σm` (filas con 1) y `ΠM` (filas con 0); es única |
 | ✅ **Simplificar = elegir por costo** | Menos compuertas, CI y niveles. El álgebra no garantiza el mínimo |
-
-## 🎟️ Ticket de salida (resuelto)
-
-1. Aplique De Morgan: `(A' + BC)'` → `A·(B' + C')` = `AB' + AC'`
-2. Escriba `m4` y `M4`: `m4 = AB'C'` y `M4 = A' + B + C`
-
-## 📌 Tarea: aprendizaje autónomo (2,5 h)
-
-1. **Lectura:** Garza, J. Á. (2025), *Electrónica digital I: álgebra de Boole, De Morgan y formas canónicas.* Complemento en inglés: Carpinelli (2023), apartado de álgebra de Boole.
-2. **Cuestionario N.º 02** de autoevaluación en el EVA (con retroalimentación inmediata).
-3. Para la próxima semana: **mapas de Karnaugh**, y traer resuelto el taller de su grupo.
 
 ---
 
