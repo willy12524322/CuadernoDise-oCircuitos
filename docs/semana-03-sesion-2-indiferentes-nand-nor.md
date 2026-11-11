@@ -7,18 +7,7 @@
 
 ---
 
-## 🎯 Agenda de la sesión
-
-| Tiempo | Actividad |
-|:-:|---|
-| 5 min | Recuperación: el ticket del lunes |
-| 20 min | Condiciones indiferentes |
-| 15 min | Universalidad NAND y NOR |
-| 20 min | Lanzamiento del proyecto integrador |
-
----
-
-## 1. El ticket del lunes, resuelto
+## 1. El ticket del lunes
 
 `F(A,B,C,D) = Σm(0, 2, 5, 7, 8, 10, 13, 15)`
 
@@ -70,7 +59,7 @@ Entonces, ¿qué debe hacer el circuito con 1010 a 1111? **Lo que más nos conve
 
 ---
 
-## 3. Ejemplo guiado: dígito BCD ≥ 5
+## 3. Ejemplo
 
 ```text
 F = Σm(5, 6, 7, 8, 9) + d(10, 11, 12, 13, 14, 15)
@@ -181,9 +170,8 @@ Tres cosas para notar:
 
 ---
 
-## 7. 🧠 Piensa, pareja, comparte
+## 7. Ejercicios
 
-1 min individual · 2 min con tu compañero · 2 min al curso.
 
 **1. ¿Por qué A entra complementada en el circuito NAND-NAND, y B, C y D no?**
 
@@ -208,31 +196,6 @@ Son **5 compuertas NAND**. Como cada 7400 trae 4 compuertas, se necesitan **2 ch
 
 ---
 
-## 8. 🚀 Proyecto integrador: un sistema, tres versiones
-
-| Entrega | Semana | Qué se hace |
-|:-:|:-:|---|
-| **1** | 6 · Unidad 1 | **Bloque combinacional:** tabla de verdad, expresión mínima y esquema simulado en Logisim-evolution |
-| **2** | 11 · Unidad 2 | **Se agrega la memoria:** diagrama de estados, flip-flops y esquema completo simulado |
-| **3** | 16 · Unidad 3 | **Descrito en VHDL:** simulación funcional, configuración de la Basys 3 y sustentación individual |
-
-Al final, cada equipo **contrasta su solución clásica con la moderna**.
-
-### 8 equipos, 4 roles rotativos, 1 Basys 3
-
-| Rol | Qué hace |
-|---|---|
-| 📋 **Especificación** | Traduce el enunciado a entradas, salidas y casos de prueba |
-| ✏️ **Diseño** | Obtiene la tabla, la expresión mínima y el esquema |
-| 🧪 **Verificación** | Simula, compara con lo predicho y reporta discrepancias |
-| 📝 **Documentación** | Redacta el informe y la declaración de uso de IA |
-
-**La placa Basys 3 (una por equipo):** 16 interruptores · 5 pulsadores · 16 LED · 4 dígitos de 7 segmentos. *El sistema debe caber en estos recursos.*
-
-Ese día: **sorteo de temas y acta de conformación**. Los roles **rotan en cada entrega**.
-
----
-
 ## 📝 Resumen
 
 | Tema | Idea clave |
@@ -242,11 +205,6 @@ Ese día: **sorteo de temas y acta de conformación**. Los roles **rotan en cada
 | **Conversión** | SOP → NAND-NAND y POS → NOR-NOR; el literal solo se complementa |
 | **Costo** | Se compara en literales y en chips: el mínimo algebraico no siempre es el más barato |
 
-## 📌 Para la próxima
-
-- 📖 **Cuestionario de autoevaluación 03** en el EVA, después de leer el apartado de Karnaugh e indiferentes (Carpinelli, 2023).
-- 🧪 **APE 03 (martes 27):** traer el diseño previo en papel: mapa resuelto y conversión a NAND de la función de la guía.
-- 👥 **Proyecto integrador:** acta de conformación del equipo y lectura de la guía y la rúbrica en el EVA.
 
 ---
 
