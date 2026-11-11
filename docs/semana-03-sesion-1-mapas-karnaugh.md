@@ -221,7 +221,7 @@ Ahora se agrupan los **ceros** y la lectura se **invierte**: variable en 0 → `
 ## 12. Ejercicios
 
 | Ejercicio | Función |
-|:-:|---|---|
+|:-:|---|
 | **T1** | `F(A,B,C) = Σm(1, 3, 4, 6)` |
 | **T2** | `F(A,B,C,D) = Σm(0, 1, 4, 5, 6, 7, 14, 15)` |
 | **T3** | `F(A,B,C,D) = Σm(0, 2, 5, 8, 10, 13)` |
