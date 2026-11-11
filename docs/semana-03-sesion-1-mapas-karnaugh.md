@@ -7,20 +7,10 @@
 
 ---
 
-## 🎯 Agenda de la sesión
-
-1. Recuperación: el problema del mínimo.
-2. Mapas de 3 y 4 variables · SOP y POS.
-3. Taller dirigido por parejas.
-4. Socialización y ticket de salida.
-
----
-
 ## 1. El problema del mínimo
 
-### Reto de 4 minutos, por parejas
 
-Simplifiquen con el álgebra de Boole de la semana 2:
+Simplificar con el álgebra de Boole:        
 
 ```text
 F(A,B,C) = Σm(0, 2, 4, 5, 6)
@@ -37,7 +27,7 @@ F(A,B,C) = Σm(0, 2, 4, 5, 6)
 | 1 | 1 | 0 | **1** |
 | 1 | 1 | 1 | 0 |
 
-La pregunta incómoda: **¿cómo saben que su respuesta es la mínima?** Con álgebra puedes llegar a una expresión correcta sin tener forma de asegurar que es la más corta. Ahí entra Karnaugh.
+La pregunta importante: **¿cómo se sabe que su respuesta es la mínima?** Con álgebra puedes llegar a una expresión correcta sin tener forma de asegurar que es la más corta. Ahí es cuando se usa los mapas de Karnaugh.
 
 ---
 
@@ -69,8 +59,6 @@ Si ordenáramos en binario normal (00, 01, 10, 11), entre 01 y 10 cambiarían **
 | Binario | 00 → 01 → 10 → 11 → 00 | 1, 2, 1, 2 ❌ |
 | **Gray** | 00 → 01 → 11 → 10 → 00 | 1, 1, 1, 1 ✅ |
 
-(Esto conecta con el código Gray de la [Semana 1](semana-01-sistemas-numericos-compuertas.md).)
-
 ---
 
 ## 4. Mapa de 3 variables
@@ -83,7 +71,7 @@ Filas: la variable **A**. Columnas: **BC en código Gray**.
 | **1** | m4 | m5 | m7 | m6 |
 
 - Cada celda es un minitérmino: 8 celdas = 8 filas de la tabla.
-- ⚠️ **Atención:** `m3` va antes que `m2`.
+-  **Nota importante:** `m3` va antes que `m2`.
 
 ---
 
@@ -230,16 +218,16 @@ Ahora se agrupan los **ceros** y la lectura se **invierte**: variable en 0 → `
 
 ---
 
-## 12. ✍️ Taller dirigido por parejas (30 min)
+## 12. Ejercicios
 
-| Ejercicio | Función | Pista |
+| Ejercicio | Función |
 |:-:|---|---|
-| **T1** | `F(A,B,C) = Σm(1, 3, 4, 6)` | Mapa de 3 variables |
-| **T2** | `F(A,B,C,D) = Σm(0, 1, 4, 5, 6, 7, 14, 15)` | ¿Algún primo sobra? |
-| **T3** | `F(A,B,C,D) = Σm(0, 2, 5, 8, 10, 13)` | Atención a las esquinas |
-| **T4** | Encuentre los 3 errores del mapa de la siguiente sección | Diagnóstico de errores |
+| **T1** | `F(A,B,C) = Σm(1, 3, 4, 6)` |
+| **T2** | `F(A,B,C,D) = Σm(0, 1, 4, 5, 6, 7, 14, 15)` |
+| **T3** | `F(A,B,C,D) = Σm(0, 2, 5, 8, 10, 13)` |
+| **T4** | Encuentre los 3 errores del mapa de la siguiente sección |
 
-### 💡 Propuestas de solución (mías, para contrastar)
+### 💡 Soluciones
 
 **T1 · `Σm(1, 3, 4, 6)`**
 
@@ -250,7 +238,7 @@ Ahora se agrupan los **ceros** y la lectura se **invierte**: variable en 0 → `
 
 - m1 y m3 → `A'C` (cambia B).
 - m4 y m6 → `AC'` (cambia B).
-- **`F = A'C + AC'`**, que es exactamente `A ⊕ C` (una XOR).
+- **`F = A'C + AC'`**, que tambieen es exactamente `A ⊕ C` (una XOR).
 
 **T2 · `Σm(0, 1, 4, 5, 6, 7, 14, 15)`**
 
@@ -289,15 +277,6 @@ F = A'C' + BC + A'B + A'B'C'
 F = A'C' + BC
 ```
 
-> ⚠️ La redacción exacta del error 3 es mi interpretación de la imagen. Verifícala con tu pareja o con el docente.
-
----
-
-## 14. 🎟️ Ticket de salida (individual · 5 min)
-
-Simplifique en SOP mínima: `F(A,B,C,D) = Σm(0, 2, 5, 7, 8, 10, 13, 15)`.
-
-Resultado (que se resuelve en la sesión siguiente): **`F = B'D' + BD`**, es decir, las 4 esquinas más el bloque central. ¡Es una XNOR entre B y D!
 
 ---
 
@@ -310,11 +289,6 @@ Resultado (que se resuelve en la sesión siguiente): **`F = B'D' + BD`**, es dec
 | **SOP y POS** | SOP agrupa los 1; POS agrupa los 0 y se lee invertido |
 | **Mínimo** | Primos esenciales primero; la solución mínima no siempre es única |
 
-## 📌 Para la próxima
-
-- 🧪 **Martes 20 · Laboratorio:** APE 02, formas canónicas y simplificación algebraica.
-- 📖 **Lectura:** apartado de mapas de Karnaugh y condiciones indiferentes del texto base (Carpinelli, 2023).
-- 📅 **Miércoles 21:** condiciones indiferentes, universalidad NAND/NOR y lanzamiento del proyecto integrador.
 
 ---
 
