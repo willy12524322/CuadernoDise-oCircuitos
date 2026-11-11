@@ -29,7 +29,7 @@ Este repositorio es el cuaderno de estudio de **Diseño de Circuitos**. Aquí se
 
 ---
 
-## 🗺️ Mapa de la Unidad 1
+##  Mapa de la Unidad 1
 
 ```mermaid
 flowchart LR
