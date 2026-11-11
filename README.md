@@ -57,7 +57,7 @@ flowchart LR
 
 | Archivo | Para qué sirve |
 |---|---|
-| [📐 Formulario rápido](docs/formulario-rapido.md) | Postulados, teoremas, De Morgan y fórmulas de los sumadores en una sola página |
+| [📐 Formulario](docs/formulario-rapido.md) | Postulados, teoremas, De Morgan y fórmulas de los sumadores en una sola página |
 | [📖 Glosario](docs/glosario.md) | Los términos de la unidad explicados en una línea |
 
 ---
