@@ -8,7 +8,6 @@
 
 Período septiembre 2026 – marzo 2027
 
-![Estado](https://img.shields.io/badge/estado-en%20construcci%C3%B3n-orange)
 ![Unidad](https://img.shields.io/badge/unidad-1-blue)
 ![Semanas](https://img.shields.io/badge/semanas-1%20a%204-green)
 ![Herramienta](https://img.shields.io/badge/simulador-Logisim--evolution-purple)
@@ -17,11 +16,9 @@ Período septiembre 2026 – marzo 2027
 
 ---
 
-## 👋 Sobre este cuaderno
+## Introducción
 
-Este repositorio es mi cuaderno de estudio de **Diseño de Circuitos**. Aquí voy ordenando, semana por semana, lo que vemos en clase: la teoría, los ejemplos resueltos, los talleres y los errores típicos que conviene evitar. La idea es que sirva para repasar antes de una evaluación y para consultar rápido cuando esté haciendo una práctica (APE) en el laboratorio.
-
-Está escrito con mis propias palabras a partir de las diapositivas del docente, así que si algo no cuadra con lo que se vio en clase, el material oficial del EVA manda.
+Este repositorio es el cuaderno de estudio de **Diseño de Circuitos**. Aquí se va ordenando, semana por semana, lo que se ve en clase, la teoría, los ejemplos resueltos, los talleres y apuntes adicionales que hice. La idea del cuaderno es que sirva de apoyo para repasar antes de una evaluación y para ir recopilando lo que se ha visto en la asignatura.
 
 | | |
 |---|---|
@@ -29,7 +26,6 @@ Está escrito con mis propias palabras a partir de las diapositivas del docente,
 | **Docente** | Ing. Luis Darío Sinche Cueva, Mg. |
 | **Asignatura** | Diseño de Circuitos |
 | **Carrera** | Computación · Universidad Nacional de Loja |
-| **Resultado de aprendizaje (R1)** | Diseña e implementa circuitos combinacionales básicos utilizando técnicas de diseño clásico |
 
 ---
 
@@ -42,7 +38,7 @@ flowchart LR
     S3["<b>Semana 3</b><br/>Karnaugh, indiferentes<br/>y NAND/NOR"]
     S4["<b>Semana 4</b><br/>Circuitos aritméticos"]
     S1 --> S2 --> S3 --> S4
-    S4 -.-> S5["Semana 5<br/>Multiplexores<br/>(próximamente)"]
+
 ```
 
 ---
