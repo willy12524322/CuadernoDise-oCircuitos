@@ -11,12 +11,6 @@
 
 Pasar de **un enunciado** a la **tabla de verdad**, de ahí a la **forma canónica** y, por último, a un **circuito simplificado**.
 
-| Día | Actividad |
-|:---:|---|
-| Lunes | Teoría + problema de la alarma |
-| Martes | **APE 02** en Logisim |
-| Miércoles | Taller de simplificación |
-
 ```mermaid
 flowchart LR
     A["Enunciado"] --> B["Tabla de verdad"] --> C["Forma canónica<br/>Σm / ΠM"] --> D["Simplificación"] --> E["Circuito"]
