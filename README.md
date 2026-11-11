@@ -1,10 +1,11 @@
 <div align="center">
 
-# 🔌 Cuaderno de Diseño de Circuitos
+# Cuaderno de Diseño de Circuitos
 
 ### Unidad 1 · Lógica combinacional con diseño clásico
 
 **Universidad Nacional de Loja** · Carrera de Computación · 2.º ciclo, paralelo A
+
 Período septiembre 2026 – marzo 2027
 
 ![Estado](https://img.shields.io/badge/estado-en%20construcci%C3%B3n-orange)
