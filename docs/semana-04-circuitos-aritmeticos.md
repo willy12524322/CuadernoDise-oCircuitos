@@ -311,34 +311,6 @@ flowchart LR
 - Sin signo: **correcto** (5 + 3 = 8).
 - Con signo: **overflow**, porque `C3 = 1` y `C4 = 0` → `V = 1`.
 
-Después, la misma suma se hace en Logisim con 4 sumadores y con el integrado **7483**.
-
----
-
-## 12. ✍️ Taller dirigido (25 min, en parejas)
-
-| # | Ejercicio | Resultado (propuesta mía) |
-|:-:|---|---|
-| 1 | Sumar `1011 + 0110` escribiendo el acarreo de cada columna | Acarreos `1 1 1 0`; resultado `1 0001` (17 sin signo). Con signo: −5 + 6 = **1**, y el 1 sobrante se descarta |
-| 2 | Restar `0110 − 0011` con el sumador (M = 1) | B invertido = `1100`, Cin = 1 → `0110 + 1100 + 1 = 1 0011` → **0011 = 3** |
-| 3 | Estimar el retardo de un sumador de 16 bits | 2 · 16 · 10 ns = **320 ns** |
-| 4 | Comparar A = `10` y B = `01` | **A > B** (gana en el bit alto) y **A ≠ B** |
-
-<details>
-<summary>Detalle del ejercicio 1</summary>
-
-```text
-acarreo   1 1 1 0
-          1 0 1 1   (11)
-        + 0 1 1 0   ( 6)
-        ---------
-        1 0 0 0 1   (17)
-```
-
-Columna 0: 1+0 = 1, llevo 0 · Columna 1: 1+1 = 10, escribo 0, llevo 1 · Columna 2: 0+1+1 = 10, escribo 0, llevo 1 · Columna 3: 1+0+1 = 10, escribo 0, llevo 1 · el último acarreo pasa a ser el bit 4.
-
-</details>
-
 ---
 
 ## 📝 Resumen
@@ -351,13 +323,6 @@ Columna 0: 1+0 = 1, llevo 0 · Columna 1: 1+1 = 10, escribo 0, llevo 1 · Column
 | **Ripple** | El acarreo avanza etapa por etapa |
 | **Resta** | M = 1: la XOR invierte B y `Cin = 1` |
 | **Overflow** | `V = C3 ⊕ C4`, no `Cout` |
-
-## 📌 Tarea para la próxima clase
-
-- 📖 **Lectura:** circuitos aritméticos combinacionales (texto base).
-- ✅ **Cuestionario de autoevaluación 04** en el EVA.
-- 📝 **Diseño previo de la APE 04:** tabla y ecuaciones del sumador completo, en papel.
-- 🧪 **APE 04:** martes 27 de octubre · 07:30 a 09:30 · Laboratorio.
 
 ---
 
