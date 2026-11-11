@@ -43,7 +43,7 @@ flowchart LR
 
 ---
 
-## 📚 Índice de contenidos
+## Índice de contenidos
 
 | Semana | Tema | Qué vas a encontrar | Archivo |
 |:---:|---|---|---|
@@ -53,16 +53,32 @@ flowchart LR
 | **3 · Sesión 2** | Indiferentes y NAND/NOR | Condiciones indiferentes · universalidad NAND y NOR · conversión a NAND-NAND · proyecto integrador | [📄 Semana 3 · S2](docs/semana-03-sesion-2-indiferentes-nand-nor.md) |
 | **4** | Circuitos aritméticos | Semisumador · sumador completo · sumador de 4 bits · resta · overflow · comparador | [📄 Semana 4](docs/semana-04-circuitos-aritmeticos.md) |
 
-### 🧰 Material de apoyo
+### Material
 
 | Archivo | Para qué sirve |
 |---|---|
-| [📐 Formulario](docs/formulario-rapido.md) | Postulados, teoremas, De Morgan y fórmulas de los sumadores en una sola página |
-| [📖 Glosario](docs/glosario.md) | Los términos de la unidad explicados en una línea |
+| [Formulario](docs/formulario-rapido.md) | Postulados, teoremas, De Morgan y fórmulas de los sumadores en una sola página |
+| [Glosario](docs/glosario.md) | Los términos de la unidad explicados en una línea |
+
 
 ---
 
-## 📖 Bibliografía
+## Declaración de IA
+
+### Herramienta utilizada
+Gemini 
+
+### Para qué se usó
+- **Organizar y redactar** en formato Markdown los contenidos de las semanas, a partir de apuntes propios, definiciones, y diapositivas.
+- **Reescribir** el contenido con un lenguaje más claro y estructurarlo en tablas.
+- **Armar** el índice del repositorio,.
+
+### Para qué no se usó
+- La teoría, las definiciones, los ejemplos y las imágenes provienen del material oficial de la asignatura y apuntes propios.
+
+---
+
+## Bibliografía
 
 - Carpinelli (2023). Texto base de la asignatura: apartados de álgebra de Boole, mapas de Karnaugh, indiferentes y circuitos aritméticos combinacionales.
 - Garza, J. Á. (2025). *Electrónica digital I: álgebra de Boole, De Morgan y formas canónicas.*
