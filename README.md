@@ -45,7 +45,7 @@ flowchart LR
 
 ## Índice de contenidos
 
-| Semana | Tema | Qué vas a encontrar | Archivo |
+| Semana | Tema | Contenido | Archivo |
 |:---:|---|---|---|
 | **1** | Sistemas numéricos, códigos y compuertas | Binario, hexadecimal y octal · complemento a dos · BCD, Gray y ASCII · las 7 compuertas · el chip 74LS08 | [📄 Semana 1](docs/semana-01-sistemas-numericos-compuertas.md) |
 | **2** | Álgebra de Boole y formas canónicas | Postulados y teoremas · De Morgan · minitérminos y maxitérminos · SOP y POS · alarma de 3 sensores | [📄 Semana 2](docs/semana-02-algebra-boole-formas-canonicas.md) |
