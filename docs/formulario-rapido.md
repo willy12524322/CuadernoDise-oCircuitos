@@ -1,4 +1,4 @@
-# 📐 Formulario rápido · Diseño de Circuitos (Unidad 1)
+# 📐 Formulario · Diseño de Circuitos (Unidad 1)
 
 > Todo lo que conviene tener a mano en una sola página. Los detalles y ejemplos están en cada semana.
 
