@@ -9,7 +9,7 @@
 Período septiembre 2026 – marzo 2027
 
 ![Unidad](https://img.shields.io/badge/unidad-1-blue)
-![Semanas](https://img.shields.io/badge/semanas-1%20a%204-green)
+
 ![Herramienta](https://img.shields.io/badge/simulador-Logisim--evolution-purple)
 
 </div>
