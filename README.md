@@ -62,71 +62,15 @@ flowchart LR
 
 ---
 
-## 🧭 Cómo está organizado el repositorio
-
-```text
-.
-├── README.md                  ← estás aquí
-├── docs/
-│   ├── semana-01-sistemas-numericos-compuertas.md
-│   ├── semana-02-algebra-boole-formas-canonicas.md
-│   ├── semana-03-sesion-1-mapas-karnaugh.md
-│   ├── semana-03-sesion-2-indiferentes-nand-nor.md
-│   ├── semana-04-circuitos-aritmeticos.md
-│   ├── formulario-rapido.md
-│   └── glosario.md
-└── assets/                    ← capturas de las diapositivas y diagramas
-    ├── semana-01/
-    ├── semana-02/
-    ├── semana-03/
-    └── semana-04/
-```
-
----
-
-## 🧪 Prácticas de laboratorio (APE)
-
-Las APE se trabajan en **Logisim-evolution**. Cada una conecta con lo visto en la semana:
-
-| Práctica | Tema | Se apoya en |
-|---|---|---|
-| APE 01 | Comprobación de compuertas en el simulador | Semana 1 |
-| APE 02 | Formas canónicas y simplificación algebraica | Semana 2 |
-| APE 03 | Mapa de Karnaugh y conversión a NAND | Semana 3 |
-| APE 04 | Circuitos sumadores | Semana 4 |
-
----
-
-## 🚀 Proyecto integrador
-
-Un mismo sistema que crece en tres entregas. Se trabaja en equipos de 4 roles rotativos (especificación, diseño, verificación y documentación) y debe caber en los recursos de una placa **Basys 3**.
-
-| Entrega | Semana | Qué se hace |
-|:---:|:---:|---|
-| 1 | 6 · Unidad 1 | Bloque combinacional: tabla de verdad, expresión mínima y esquema simulado |
-| 2 | 11 · Unidad 2 | Se agrega memoria: diagrama de estados, flip-flops y esquema completo |
-| 3 | 16 · Unidad 3 | Descripción en VHDL, simulación funcional y sustentación individual |
-
----
-
-## ⚠️ Cosas que conviene verificar
-
-- Las fechas de las prácticas que aparecen en las diapositivas de las semanas 3 y 4 no coinciden del todo entre sí. Confirma siempre el calendario en el EVA.
-- Las soluciones marcadas como **"propuesta"** en los talleres son mías; no vienen en las diapositivas. Contrástalas con tu grupo o con el docente.
-
----
-
-## 📖 Bibliografía mencionada en clase
+## 📖 Bibliografía
 
 - Carpinelli (2023). Texto base de la asignatura: apartados de álgebra de Boole, mapas de Karnaugh, indiferentes y circuitos aritméticos combinacionales.
 - Garza, J. Á. (2025). *Electrónica digital I: álgebra de Boole, De Morgan y formas canónicas.*
-
-> En las diapositivas solo aparecen autores y años; los datos completos de las referencias están en el EVA.
 
 ---
 
 <div align="center">
 
-Hecho con paciencia (y bastante café) por **Willy Ramírez** · UNL · 2026
+UNL · 2026
 
 </div>
