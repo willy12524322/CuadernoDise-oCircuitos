@@ -424,13 +424,6 @@ La columna «Fila» es el *bonus* del enunciado: cada combinación ABC leída co
 | **7 compuertas** | NOT, AND, OR, NAND, NOR, XOR, XNOR, cada una con su tabla de verdad |
 | **Hoja de datos** | Pines, alimentación (14 y 7) y función del 74LS08 |
 
-## 📌 Tarea y próxima sesión
-
-- 📖 Lectura del apartado de **sistemas numéricos y códigos** del texto base (aula virtual).
-- ✅ **Cuestionario 01** en el aula virtual, después de la lectura.
-- 💻 Instalar **Logisim-evolution** desde GitHub (*Releases*): instalador `.msi` para Windows o `.dmg` para macOS.
-- 🧪 **Práctica APE 01** (martes): comprobación de compuertas en el simulador. Traer la laptop si es posible.
-
 ---
 
 [⬅️ Volver al índice](../README.md) · [Semana 2 ➡️](semana-02-algebra-boole-formas-canonicas.md)
